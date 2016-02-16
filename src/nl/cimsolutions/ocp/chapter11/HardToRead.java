@@ -9,19 +9,11 @@ package nl.cimsolutions.ocp.chapter11;
  *
  * @author S.Rahman
  */
-public class UseBoxing {
+public class HardToRead {
     public static void main(String args[]){
-        UseBoxing u = new UseBoxing();
-        u.go(5);
+        HardToRead h = new HardToRead();
+        System.out.println(h);
+        System.out.println(h.toString());
     }
     
-    boolean go(Integer i){
-        Boolean ifSo = true;
-        Short s = 300;
-        if(ifSo){
-            System.out.println(++s);
-//            System.out.println("hello");
-        }
-        return !ifSo;
-    }
 }
