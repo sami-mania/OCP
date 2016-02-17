@@ -62,13 +62,5 @@ public class MapTest {
         System.out.println(m.get(new Truck()));
         System.out.println(m.size());
         
-        
-        c1.name = "meganeReno";
-        System.out.println(m.get(c1));
-        c1.name = "renault";
-        System.out.println(m.get(c1));
-        c1.name = "capture";
-        System.out.println(m.get(c1));
-        
     }
 }
