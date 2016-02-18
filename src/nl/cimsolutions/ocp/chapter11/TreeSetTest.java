@@ -22,13 +22,13 @@ public class TreeSetTest {
         times.add(2100);
         
         //java 5 version
-//        TreeSet<Integer> subset = new TreeSet<Integer>();
-//        subset = (TreeSet<Integer>) times.headSet(1600);
-//        System.out.println("J5 - last before 4pm is: " + subset.last());
-//        
-//        TreeSet<Integer> sub2 = new TreeSet<Integer>();
-//        sub2 = (TreeSet < Integer >)times.tailSet(2000);
-//        System.out.println("J5 - first after 8pm is: " + sub2.first());
+        TreeSet<Integer> subset = new TreeSet<Integer>();
+        subset = (TreeSet<Integer>) times.headSet(1600);
+        System.out.println("J5 - last before 4pm is: " + subset.last());
+        
+        TreeSet<Integer> sub2 = new TreeSet<Integer>();
+        sub2 = (TreeSet < Integer >)times.tailSet(2000);
+        System.out.println("J5 - first after 8pm is: " + sub2.first());
         
         // java 6 version
         System.out.println("J6 - last before 4pm is: " + times.lower(1600));
