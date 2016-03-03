@@ -7,7 +7,6 @@ package nl.cimsolutions.ocp.chapter13;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import sun.awt.SunGraphicsCallback;
 
 /**
  *
@@ -48,7 +47,7 @@ public class AccountDanger implements Runnable{
         }
     }
     
-    private void makeWithdrawal(int amt){
+    private synchronized void makeWithdrawal(int amt){
         if(accnt.getBalance() >= amt){
             System.out.println(Thread.currentThread().getName() + " is going to withdraw");
             try {
