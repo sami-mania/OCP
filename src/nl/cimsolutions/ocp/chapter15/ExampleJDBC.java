@@ -36,15 +36,15 @@ public class ExampleJDBC {
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/BookSellerDB", "OCP", "ocp");
             statement = connection.createStatement();
             String query = "SELECT * FROM \"Customer\"";
-            System.out.println("SELECT * FROM Customer;");
+//            System.out.println("SELECT * FROM Customer;");
             ResultSet rs = statement.executeQuery(query);
             
             while(rs.next()){
                 System.out.println(rs.getInt("CustomerID") + " ");
-                System.out.println(rs.getString("First Name") + " ");
-                System.out.println(rs.getString("Last Name") + " ");
+                System.out.println(rs.getString("FirstName") + " ");
+                System.out.println(rs.getString("LastName") + " ");
                 System.out.println(rs.getString("Email") + " ");
-                System.out.println(rs.getString("Phone") + " ");
+                System.out.println(rs.getString("PhoneNumber") + " ");
             }
            
             rs.close();
