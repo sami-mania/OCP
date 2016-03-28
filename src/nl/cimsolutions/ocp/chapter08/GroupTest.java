@@ -17,12 +17,12 @@ public class GroupTest{
         Pattern p = Pattern.compile(args[0]);
         Matcher m = p.matcher(args[1]);
         System.out.println("\nSource: " + args[1]);
-        System.out.println("index: 0123456789\n");
+        System.out.println("index : 0123456789\n");
         System.out.println("Pattern: " + m.pattern());
         while(m.find()){
             System.out.println(m.start() + " " + m.group());
         }
-        System.out.println("");
+//        System.out.println("");
         
    }
 }
