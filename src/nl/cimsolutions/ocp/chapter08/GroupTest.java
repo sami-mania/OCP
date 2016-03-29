@@ -20,7 +20,7 @@ public class GroupTest{
         System.out.println("index : 0123456789\n");
         System.out.println("Pattern: " + m.pattern());
         while(m.find()){
-            System.out.println(m.start() + " " + m.group());
+            System.out.println(m.start() + " " + m.end() + " " + m.group());
         }
 //        System.out.println("");
         
