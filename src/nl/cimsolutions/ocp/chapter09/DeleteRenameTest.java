@@ -24,7 +24,13 @@ public class DeleteRenameTest {
         delFile2.createNewFile();
         
         delFile1.delete();
-        System.out.println("delDir is");
+        System.out.println("delDir is " + delDir.delete());
+        
+        File newName = new File(delDir, "newName.txt");
+        delFile2.renameTo(newName);
+        
+        File newDir = new File("newDir");
+        delDir.renameTo(newDir);
         System.out.println("");
         
     }
