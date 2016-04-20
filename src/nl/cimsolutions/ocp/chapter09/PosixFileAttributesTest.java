@@ -21,7 +21,7 @@ import java.util.logging.Logger;
  * @author S.Rahman
  */
 public class PosixFileAttributesTest {
-    public static void main(String[] args){
+    public static void main(String[] args){       
         try {
             Path path = Paths.get("temp.txt");
             Files.createFile(path);
