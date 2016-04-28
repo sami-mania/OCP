@@ -25,8 +25,6 @@ public class CreatingPath {
         
         //NIO.2 approach
         Path p = Paths.get("test.txt");
-        Files.createFile(p);
-        
-        
+        Files.createFile(p);                
     }
 }
