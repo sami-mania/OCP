@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  *
  * @author S.Rahman
  */
-public class GroupTest{
+public class RegexGroupTest{
     public static void main(String[] args) {
         Pattern p = Pattern.compile(args[0]);
         Matcher m = p.matcher(args[1]);

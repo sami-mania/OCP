@@ -32,7 +32,8 @@ public class FileReaderFileWriterTest {
             System.out.print(size + " ");
             for (char c : in) {
                 System.out.print(c);
-            }                      
+            }  
+            System.out.println("");
         } catch (Exception e) {
             e.printStackTrace();
         }
