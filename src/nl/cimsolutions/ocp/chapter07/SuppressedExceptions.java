@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 public class SuppressedExceptions {
     public static void main(String[] args) {
-        try(One one = new One()){
+        try(One one = new One();){
             throw new Exception("try");
         }
         catch (Exception e){
